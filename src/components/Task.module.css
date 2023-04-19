@@ -1,0 +1,167 @@
+.containerTask {
+    background-color: var(--gray-500);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+.complete {
+    width: 1.125rem;
+    height: 1.125rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.complete div {
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+}
+
+.taskContent {
+    line-height: 1.6;
+    color: var(--gray-100);
+    text-decoration: none;
+    text-align: start;
+    width: 100%;
+}
+
+.taskContentCompleted {
+    line-height: 1.6;
+    color: var(--gray-300);
+    text-decoration: none;
+    text-align: start;
+    width: 100%;
+    text-decoration: line-through;
+}
+
+.delete {
+    background-color: transparent;
+    color: var(--gray-300);
+    display: flex;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: var(--danger);
+}
+
+.containerTaskInput {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    gap: 1rem;
+}
+
+.containerTaskInput form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.containerTaskInput input {
+    color: var(--gray-100);
+    padding: 6px 18px;
+    height: 50px;
+    background-color: var(--gray-500);
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--gray-700);
+    flex: auto;
+}
+
+.containerTaskInput button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--gray-100);
+    background-color: var(--blue-dark);
+    font-size: 0.875rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.containerTaskInput button:hover {
+    background-color: var(--blue);
+}
+
+.containerTaskInput button:disabled:hover {
+    cursor: not-allowed;
+    background-color: var(--blue-dark);
+}
+
+.containerStatusBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 60px auto 0;
+}
+
+.createdTasks {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.createdTasks p {
+    font-size: 14px;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.completedTasks {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.completedTasks p {
+    font-size: 14px;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.tag {
+    background-color: var(--gray-400);
+    font-size: 0.75rem;
+    color: var(--gray-100);
+    padding: 0.2rem 0.4rem;
+    border-radius: 100px;
+}
+
+.emptyTasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-300);
+    margin-top: 60px;
+}
+
+.emptyTasks p:first-of-type {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.check {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: var(--purple);
+    border-radius: 50%;
+    color: var(--gray-100);
+}
